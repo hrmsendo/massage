@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <!-- Tailwind CSS -->
+  <title>出張マッサージ</title>
   <link href="style.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold text-blue-500 mb-4">Hello World</h1>
-    <button id="helloBtn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-      Click Me
-    </button>
-  </div>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- ヘッダー -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-green-600">出張マッサージ</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#concept" class="hover:text-green-600">コンセプト</a></li>
+          <li><a href="#info" class="hover:text-green-600">営業情報</a></li>
+          <li><a href="#contact" class="hover:text-green-600">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーロー + コンセプト -->
+  <section id="concept" class="h-screen flex flex-col justify-center items-center bg-green-100 px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4 text-green-700">
+      日ごと暮らしを心地よく
+    </h2>
+    <p class="text-lg md:text-xl max-w-2xl">
+      鴨川平を中心に出張マッサージを行っています。<br />
+      日常の疲れを癒やし、日々の暮らしがより健康的で幸せになりますように。
+    </p>
+  </section>
+
+  <!-- 営業情報 -->
+  <section id="info" class="py-16 bg-green-50 max-w-3xl mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-6 text-green-700">営業情報</h3>
+    <ul class="space-y-2">
+      <li><strong>営業時間:</strong> 土日祝日 9:00〜18:00</li>
+      <li><strong>対応エリア:</strong> 高島市鴨川平および周辺（詳細はお問い合わせください）</li>
+      <li><strong>料金:</strong> 60分 5,000円〜（出張費込）</li>
+    </ul>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="py-16 max-w-3xl mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-6 text-green-700">お問い合わせ</h3>
+    <p class="mb-2"><strong>電話:</strong> 090-XXXX-XXXX</p>
+    <p><strong>メール:</strong> <a href="mailto:info@example.com" class="text-green-600 underline">info@example.com</a></p>
+  </section>
+
+  <!-- フッター -->
+  <footer class="py-6 bg-white text-center text-sm text-gray-500 border-t">
+    &copy; 2025 出張マッサージ
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
